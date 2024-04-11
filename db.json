@@ -1,0 +1,165 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ricardo",
+      "image": "https://thewebdev.info/wp-content/uploads/2020/07/yyxtdktkrfm-1200x800.jpg",
+      "password": "dolphin",
+      "position": "Manager",
+      "schedule": "Monday to Saturday",
+      "workTime": "7:00 AM to 6:00 PM",
+      "payPerHour": 40,
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "450",
+      "worktime": "6"
+    },
+    {
+      "id": 2,
+      "name": "Edna",
+      "image": "https://thewebdev.info/wp-content/uploads/2020/07/6v2rgdqbq1i-1200x800.jpg",
+      "password": "Eloise",
+      "position": "Asst. Manager",
+      "schedule": "Wednesday,Thursday, Friday, Saturday",
+      "workTime": "7:00 AM to 6:00 PM",
+      "payPerHour": 35,
+      "timeInEvents": "3:00 PM",
+      "timeOutEvents": "2:00",
+      "payForThisWeek": 0,
+      "userName": "ednadiego"
+    },
+    {
+      "id": 3,
+      "name": "James Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "fghjkl;",
+      "position": "Purchaser",
+      "schedule": "Monday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "120"
+    },
+    {
+      "name": "JayR Cabanban",
+      "image": "https://cdn.wallpapersafari.com/67/72/HxoFaP.jpg",
+      "password": "mabuhay",
+      "position": "Purchaser",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "14",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "345",
+      "id": 4
+    },
+    {
+      "name": "Paul Jethro Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "adobo",
+      "position": "Accountant",
+      "schedule": "Monday to Wednesday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "450",
+      "id": 5
+    },
+    {
+      "name": "James Uy",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "fghjkl;",
+      "position": "Purchaser",
+      "schedule": "Monday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "120",
+      "id": 6
+    },
+    {
+      "name": "Woody",
+      "image": "\"./assets/ramen/nirvana.jpg\"",
+      "password": "wertyui",
+      "position": "sales",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "18",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "789",
+      "id": 7
+    },
+    {
+      "name": "Ruby Diego",
+      "image": "\"https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist\"",
+      "password": "ariba",
+      "position": "sales",
+      "schedule": "Monday to Saturday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "14",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "567",
+      "id": 8
+    },
+    {
+      "name": "Woody",
+      "image": "\"http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png\"",
+      "password": "adobo",
+      "position": "sales",
+      "schedule": "Monday to Wednesday",
+      "workTime": "8:00 AM to 5:00 PM",
+      "payPerHour": "35",
+      "timeInEvents": [],
+      "timeOutEvents": [],
+      "payForThisWeek": "567",
+      "id": 9
+    },
+    {
+      "username": "Ricardo",
+      "password": "Merei",
+      "id": 10
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 11
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 12
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 13
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 14
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 15
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 16,
+      "name": "asdfg",
+      "position": "garbage"
+    },
+    {
+      "username": "Ricardo",
+      "password": "dolphin",
+      "id": 17
+    }
+  ]
+}

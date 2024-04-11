@@ -1,0 +1,227 @@
+/*import React, { useState } from 'react';
+
+function EmployeeLogin() {
+  const [formData, setFormData] = useState({
+    name: '',
+    password: '',
+  });
+
+  const [employeeData, setEmployeeData] = useState(null);
+  const [loginError, setLoginError] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Fetch employee data from db.json
+    fetch('/path/to/your/db.json')
+      .then((resp) => resp.json())
+      .then((data) => {
+        // Find the employee with the inputted name
+        const employee = data.employees.find(
+          (employee) =>
+            employee.name === formData.name && employee.password === formData.password
+        );
+
+        if (employee) {
+          // If authentication is successful, set employee data
+          setEmployeeData(employee);
+          setLoginError('');
+        } else {
+          setEmployeeData(null);
+          setLoginError('Invalid name or password');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching employee data:', error);
+      });
+  };
+
+  return (
+    
+    <div>
+      <h2>Employee Login</h2>
+      <form onSubmit={handleFormSubmit}>
+        <div>
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleInputChange}
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      {loginError && <p>{loginError}</p>}
+
+      {employeeData && (
+        <div>
+          <h2>Employee Data</h2>
+          <p>Name: {employeeData.name}</p>
+          <p>Position: {employeeData.position}</p>
+          
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default EmployeeLogin;
+
+
+
+===================================================*/
+
+import React, { useState } from 'react';
+
+function EmployeeLogin() {
+  const [formData, setFormData] = useState({
+    name: '',
+    password: '',
+  });
+
+  const [employeeData, setEmployeeData] = useState(null);
+  const [loginError, setLoginError] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Simulate employee authentication (replace with your actual authentication logic)
+    const { name, password } = formData;
+     console.log(name)
+     console.log(password)
+    // Example authentication logic - you should replace this with your actual authentication logic
+    
+    
+    if (name === name && password === password) {
+      // If authentication is successful, fetch employee data
+      fetchEmployeeData(name);
+      setLoginError('');
+    } else {
+      setEmployeeData(null);
+      setLoginError('Invalid name or password');
+    }
+  };
+
+  const fetchEmployeeData = (name) => {
+    // Fetch employee data based on the provided name
+    // Replace this URL with your actual API endpoint
+    fetch(`http://localhost:3000/employees?name=${name}`)
+      .then((resp) => resp.json())
+      .then((data) => {
+        // Assuming data is an array with one employee object
+        console.log(data)
+        if (data.length === 1) {
+          setEmployeeData(data[0]);
+        } else {
+          setEmployeeData(null);
+          setLoginError('Employee not found');
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching employee data:', error);
+      });
+  };
+
+ /*return (
+    <div>
+      <h2>Employee Login</h2>
+      <form onSubmit={handleFormSubmit}>
+        <div>
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleInputChange}
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      {loginError && <p>{loginError}</p>}
+
+      {employeeData && (
+        <div>
+          <h2>Employee Data</h2>
+          <p>Name: {employeeData.name}</p>
+          <p>Position: {employeeData.position}</p>
+         
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default EmployeeLogin;
+
+/*Fetch employee data from db.json
+    fetch("http://localhost:3000/employees")
+      .then((resp) => resp.json())
+      .then((data) => {
+        // Find the employee with the inputted name
+        const employee = data.employees.find(
+          (employee) =>
+            employee.name === formData.name && employee.password === formData.password
+        );
+
+        ------------------
+
+        <Route exact path="/TimeElapsed">
+        <TimeElapsed />
+      </Route>
+      <Route exact path="/TimeList">
+        <TimeList />
+      </Route> 
+       
+      -------------------
+      <NavLink
+        to="/TimeElapsed"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Punch Clock
+      </NavLink>
+      <NavLink
+        to="/TimeList"
+        exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}
+      >
+        Time Card
+      </NavLink>
+    */}
